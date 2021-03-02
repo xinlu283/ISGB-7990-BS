@@ -1,25 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# Write a python module, bs_options.py, to price European Options
-
-# In[1]:
-
-
 import math
-
-
-# In[2]:
-
-
 import numpy as np
-
-
-# In[3]:
-
-
 import pandas as pd
-
 
 # # S=current price
 # # K=strike price
@@ -28,15 +11,8 @@ import pandas as pd
 # # r = risk free interest rate
 # # d = dividend yield per year
 
-# In[13]:
-
-
 #we impoet the data from the csv doc "data.csv"
 #the first line in data is current price
-
-
-# In[7]:
-
 
 data1 = pd.read_csv('data.csv',header = None)
 data2 = list(data1.split(' '))
